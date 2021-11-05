@@ -1,0 +1,15 @@
+
+[network_switch_group]
+
+CS01 ansible_host=10.0.254.211
+CS02 ansible_host=10.0.254.212
+AS01 ansible_host=10.0.254.213
+AS02 ansible_host=10.0.254.214
+
+[network_server_group]
+
+localhost
+
+[network_device_group:children]
+
+network_switch_group
